@@ -1,0 +1,64 @@
+Sleep(1000);
+			system("cls");
+			cout << "\t\t\t\tRUT TIEN\n\n";
+			cout << "Nhap so tien ban muon rut: ";
+			cin >> tien_rut;
+			if (tien_rut <= so_du)
+			{
+				Sleep(1000);
+				so_du=so_du-tien_rut;
+				cout << "\nBAN DA RUT TIEN THANH CONG, SO DU CON LAI LA: " << so_du << " VND\n\n";
+				int a[40];
+    a[0]=tien_rut/500;
+	a[1]=tien_rut%500;
+	a[2]=a[1]/200;
+	a[3]=a[1]%200;
+	a[4]=a[3]/100;
+	a[5]=a[3]%100;
+	a[6]=a[5]/50;
+	a[7]=a[5]%50;
+	a[8]=a[7]/20;
+	a[9]=a[7]%20;
+	a[10]=a[9]/10;
+	a[11]=a[9]%10;
+	a[12]=a[11]/5;
+	a[13]=a[11]%5;
+	a[14]=a[13]/2;
+	a[15]=a[13]%2;
+	a[16]=a[15]/1;
+	a[17]=a[15]%1;
+	printf("best combination is: %d unit of 500\n%d unit of 200\n%d unit of 100\n%d unit of 50\n%d unit of 20\n%d unit of 10\n%d unit of 5\n%d unit of 2\n%d unit of 1",a[0],a[2],a[4],a[6],a[8],a[10],a[12],a[14],a[16]);
+				Sleep(1000);
+			}
+			while (tien_rut > so_du)
+			{
+				cout << "\nSo tien rut phai nho hon hoac bang so du con lai!\n";
+				cin >> tien_rut;
+				if (tien_rut <= so_du)
+				{
+					Sleep(1000);
+					cout << "\nBAN DA RUT TIEN THANH CONG, SO DU CON LAI LA: " << so_du - tien_rut << " VND\n\n";
+					int a[40];
+             a[0]=tien_rut/500;
+	         a[1]=tien_rut%500;
+	         a[2]=a[1]/200;
+	         a[3]=a[1]%200;
+	         a[4]=a[3]/100;
+	         a[5]=a[3]%100;
+	         a[6]=a[5]/50;
+	         a[7]=a[5]%50;
+	         a[8]=a[7]/20;
+	         a[9]=a[7]%20;
+	         a[10]=a[9]/10;
+	         a[11]=a[9]%10;
+	         a[12]=a[11]/5;
+	         a[13]=a[11]%5;
+	         a[14]=a[13]/2;
+	         a[15]=a[13]%2;
+	         a[16]=a[15]/1;
+	         a[17]=a[15]%1;
+	printf("best combination is: %d unit of 500\n%d unit of 200\n%d unit of 100\n%d unit of 50\n%d unit of 20\n%d unit of 10\n%d unit of 5\n%d unit of 2\n%d unit of 1",a[0],a[2],a[4],a[6],a[8],a[10],a[12],a[14],a[16]);
+					Sleep(1000);
+				}
+			}
+			break;
